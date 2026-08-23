@@ -324,6 +324,42 @@
     object-fit:cover;
     border-radius:var(--radius);
   }
+
+  .photo-figure{
+    margin:32px 0 0;
+  }
+  .photo-figure img{
+    width:100%;
+    max-height:520px;
+    object-fit:cover;
+    border-radius:var(--radius);
+  }
+  .photo-figure figcaption{
+    margin-top:12px;
+    font-family:'Space Mono', monospace;
+    font-size:0.8rem;
+    color:var(--ink-400);
+    text-align:center;
+    font-style:normal;
+  }
+
+  .feature-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:16px;
+  }
+  .feature-links a{
+    font-family:'Space Mono', monospace;
+    font-size:0.82rem;
+    color:var(--brass-600);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    padding-bottom:2px;
+  }
+  .feature-links a:hover{
+    border-bottom-color:var(--brass-600);
+  }
   .feature{
     border-top:2px solid var(--ink-900);
     padding-top:16px;
@@ -548,7 +584,7 @@
 <section class="intro reveal">
   <div class="wrap">
     <div class="eyebrow">THE PLAN</div>
-    <p>We're planning the ultimate Alaska vacation — starting in Fairbanks, riding the rails to Denali National Park, continuing on to Anchorage, then boarding the Anthem of the Seas for seven days through Alaska's port cities.</p>
+    <p>We're planning the ultimate Alaska vacation — starting in Fairbanks, riding the rails to Denali National Park, continuing on to Anchorage, then boarding Royal Caribbean's Anthem of the Seas for seven days through Alaska's port cities.</p>
     <p>Come for the train, the cruise, or the entire adventure. Read on for the full plan.</p>
   </div>
 </section>
@@ -632,6 +668,11 @@
         <div class="ticket-note">approx. 4.5 hrs</div>
       </div>
     </div>
+
+    <figure class="photo-figure reveal">
+      <img src="images/GarvinsOnTrain.jpg" alt="The Garvin family aboard the Alaska train">
+      <figcaption>The Garvins on the Alaska train in 2012.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -651,6 +692,10 @@
       <div class="feature">
         <h4>Aboard Anthem of the Seas</h4>
         <p>A Royal Caribbean ship built for a full week at sea — a North Star observation capsule, indoor skydiving, a FlowRider surf simulator, and a wide mix of restaurants, bars, and live entertainment.</p>
+        <p class="feature-links">
+          <a href="https://www.royalcaribbean.com/cruise-ships/anthem-of-the-seas/deck-plans" target="_blank" rel="noopener">View the deck plans ↗</a>
+          <a href="https://www.royalcaribbean.com/cruise-ships/anthem-of-the-seas/things-to-do" target="_blank" rel="noopener">Things to do onboard ↗</a>
+        </p>
       </div>
     </div>
 
@@ -658,6 +703,11 @@
       <img src="images/CruiseShipTopDeck.jpg" alt="The Sky Bar pool deck aboard Anthem of the Seas at dusk">
       <img src="images/CruiseShipBumperCars.jpg" alt="Bumper cars in the SeaPlex aboard Anthem of the Seas">
     </div>
+
+    <figure class="photo-figure reveal">
+      <img src="images/AdamFlowRider.jpg" alt="Adam on the FlowRider surf simulator">
+      <figcaption>Adam on the FlowRider surf simulator in May 2026.</figcaption>
+    </figure>
 
     <div class="manifest reveal">
       <div class="manifest-title"><span>Cruise Itinerary</span><span>2027</span></div>
@@ -717,7 +767,7 @@
       <a href="tel:9493784568" class="btn btn-ghost">Call (949) 378-4568</a>
     </div>
     <div class="book-photo">
-      <img src="images/ComeJoinUs.JPG" alt="A guest waving excitedly from a cruise ship balcony">
+      <img src="images/ComeJoinUs.JPG" alt="Come Join Us! — a guest waving excitedly from a cruise ship balcony">
     </div>
   </div>
 </section>
