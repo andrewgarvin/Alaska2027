@@ -1,0 +1,7 @@
+server.js
+package.json
+package-lock.json
+metadata.json
+node_modules/
+.env*
+bun.lock
