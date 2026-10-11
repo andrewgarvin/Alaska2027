@@ -4,13 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alaska 2027 — By Land &amp; Sea</title>
-<meta name="description" content="Join us for a 13-day Alaska adventure in July 2027 — dome-car rail through Denali, then seven days by sea aboard Anthem of the Seas.">
+<meta name="description" content="Join us for a 14-day Alaska adventure in July 2027 — dome-car rail through Denali, then seven days by sea aboard Anthem of the Seas.">
 <meta property="og:title" content="Alaska 2027 — By Land & Sea">
-<meta property="og:description" content="Thirteen days from the Denali wilderness to the glaciers of the Inside Passage. July 2027.">
+<meta property="og:description" content="Fourteen days from the Denali wilderness to the glaciers of the Inside Passage. July 2027.">
 <meta property="og:image" content="images/TrainUpperLevelDome.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1531884422565-1b4a26326a31?auto=format&fit=crop&w=1800&q=80">
 <style>
   :root{
     --fjord-950:#0B1E2A;
@@ -49,7 +50,8 @@
   }
   p{margin:0;}
   a{color:inherit;}
-  img{max-width:100%;display:block;}
+  picture{display:block;}
+  img{max-width:100%;height:auto;display:block;}
   .mono{font-family:'Space Mono', monospace;}
   .eyebrow{
     font-family:'Space Mono', monospace;
@@ -418,6 +420,39 @@
     margin-top:3px;
   }
   .ticket-main p{font-size:1rem; color:var(--ink-900); font-weight:500;}
+  .ticket-sub{
+    font-size:0.86rem;
+    color:var(--ink-600);
+    margin-top:4px;
+    font-weight:400;
+  }
+  .ticket-hotel{
+    font-size:0.85rem;
+    color:var(--ink-600);
+    margin-top:5px;
+    display:flex;
+    align-items:baseline;
+    gap:6px;
+    flex-wrap:wrap;
+  }
+  .ticket-hotel .label{
+    font-family:'Space Mono', monospace;
+    font-size:0.68rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--ink-400);
+    margin:0;
+  }
+  .ticket-hotel a{
+    color:var(--brass-600);
+    text-decoration:none;
+    border-bottom:1px solid rgba(173,113,40,0.35);
+    font-weight:500;
+  }
+  .ticket-hotel a:hover{
+    color:var(--brass-500);
+    border-bottom-color:var(--brass-500);
+  }
   .ticket-note{
     font-family:'Space Mono', monospace;
     font-size:0.78rem;
@@ -563,15 +598,15 @@
   <div class="hero-inner">
     <div class="eyebrow">A FAMILY ADVENTURE</div>
     <h1>Alaska<br><em>by land &amp; sea</em></h1>
-    <p class="hero-sub">Thirteen days from the Denali wilderness to the glaciers of the Inside Passage. Join us for one leg, or the whole route.</p>
+    <p class="hero-sub">Fourteen days from the Denali wilderness to the glaciers of the Inside Passage. Join us for one leg, or the whole route.</p>
     <div class="hero-meta">
       <div>
         <span class="label">Dates</span>
-        July 11 – 23, 2027
+        July 10 – 23, 2027
       </div>
       <div>
         <span class="label">Route</span>
-        Fairbanks → Denali → Anchorage → Vancouver
+        Fairbanks → Denali → Anchorage → Seward → Vancouver
       </div>
     </div>
     <div class="hero-buttons">
@@ -584,7 +619,7 @@
 <section class="intro reveal">
   <div class="wrap">
     <div class="eyebrow">THE PLAN</div>
-    <p>We're planning the ultimate Alaska vacation — starting in Fairbanks, riding the rails to Denali National Park, continuing on to Anchorage, then boarding Royal Caribbean's Anthem of the Seas for seven days through Alaska's port cities.</p>
+    <p>We're planning the ultimate Alaska vacation — starting in Fairbanks, riding the rails to Denali National Park, continuing on to Anchorage and Seward, then boarding Royal Caribbean's Anthem of the Seas for seven days through Alaska's port cities.</p>
     <p>Come for the train, the cruise, or the entire adventure. Read on for the full plan.</p>
   </div>
 </section>
@@ -594,7 +629,7 @@
     <a href="#land" class="path-card path-land">
       <span class="num">PART ONE</span>
       <h3>Alaska by Land</h3>
-      <p>5 days · Fairbanks to Anchorage aboard a glass-dome scenic train</p>
+      <p>7 days · Fairbanks to Seward aboard a glass-dome scenic train</p>
       <span class="arrow">↓ See the route</span>
     </a>
     <a href="#sea" class="path-card path-sea">
@@ -609,7 +644,10 @@
 <section class="section" id="land">
   <div class="wrap">
     <div class="section-head reveal">
-      <img src="images/TrainMainPhoto.jpg" alt="Alaska Railroad train winding through the mountains toward a glacier">
+      <picture>
+        <source srcset="images/TrainMainPhoto.webp" type="image/webp">
+        <img src="images/TrainMainPhoto.jpg" alt="Alaska Railroad train winding through the mountains toward a glacier" width="1400" height="933" loading="lazy" decoding="async">
+      </picture>
       <div>
         <div class="eyebrow">PART ONE</div>
         <h2>Alaska by Land</h2>
@@ -630,47 +668,79 @@
     </div>
 
     <div class="gallery reveal">
-      <img src="images/TrainUpperLevelDome.png" alt="Passengers in the glass dome car with mountain views">
-      <img src="images/TrainLowerLevelDining.jpg" alt="The lower-level dining car set for a meal">
+      <picture>
+        <source srcset="images/TrainUpperLevelDome.webp" type="image/webp">
+        <img src="images/TrainUpperLevelDome.png" alt="Passengers in the glass dome car with mountain views" width="1000" height="725" loading="lazy" decoding="async">
+      </picture>
+      <picture>
+        <source srcset="images/TrainLowerLevelDining.webp" type="image/webp">
+        <img src="images/TrainLowerLevelDining.jpg" alt="The lower-level dining car set for a meal" width="550" height="367" loading="lazy" decoding="async">
+      </picture>
     </div>
 
     <div class="manifest reveal">
       <div class="manifest-title"><span>Land Itinerary</span><span>2027</span></div>
 
       <div class="ticket">
-        <div class="ticket-date">JUL 11<small>MON</small></div>
-        <div class="ticket-main"><p>Flight to Fairbanks, AK</p></div>
+        <div class="ticket-date">JUL 10<small>SAT</small></div>
+        <div class="ticket-main">
+          <p>Flight to Fairbanks, AK</p>
+          <div class="ticket-hotel"><span class="label">Hotel:</span> TBD</div>
+        </div>
         <div class="ticket-note"></div>
       </div>
       <div class="ticket">
-        <div class="ticket-date">JUL 12<small>TUE</small></div>
-        <div class="ticket-main"><p>Explore Fairbanks</p></div>
+        <div class="ticket-date">JUL 11<small>SUN</small></div>
+        <div class="ticket-main">
+          <p>Explore Fairbanks. Exact itinerary TBD.</p>
+          <div class="ticket-hotel"><span class="label">Hotel:</span> TBD</div>
+        </div>
         <div class="ticket-note"></div>
       </div>
       <div class="ticket">
-        <div class="ticket-date">JUL 13<small>WED</small></div>
-        <div class="ticket-main"><p>Morning: train to Denali · Afternoon: explore Denali</p></div>
+        <div class="ticket-date">JUL 12<small>MON</small></div>
+        <div class="ticket-main">
+          <p>Morning: train to Denali · Afternoon: explore Denali</p>
+          <div class="ticket-hotel"><span class="label">Hotel:</span> <a href="https://denalirv.com" target="_blank" rel="noopener">Denali Rainbow Village Motel ↗</a></div>
+        </div>
         <div class="ticket-note">4-hr ride · arrive 12:30 PM</div>
       </div>
       <div class="ticket">
-        <div class="ticket-date">JUL 14<small>THU</small></div>
-        <div class="ticket-main"><p>Explore Denali</p></div>
+        <div class="ticket-date">JUL 13<small>TUE</small></div>
+        <div class="ticket-main">
+          <p>Explore Denali</p>
+          <div class="ticket-hotel"><span class="label">Hotel:</span> <a href="https://denalirv.com" target="_blank" rel="noopener">Denali Rainbow Village Motel ↗</a></div>
+        </div>
         <div class="ticket-note"></div>
       </div>
       <div class="ticket">
-        <div class="ticket-date">JUL 15<small>FRI</small></div>
-        <div class="ticket-main"><p>Train to Anchorage</p></div>
+        <div class="ticket-date">JUL 14<small>WED</small></div>
+        <div class="ticket-main">
+          <p>Train to Anchorage</p>
+          <div class="ticket-hotel"><span class="label">Hotel:</span> TBD</div>
+        </div>
         <div class="ticket-note">7.5-hr ride · arrive 8:00 PM</div>
       </div>
       <div class="ticket">
-        <div class="ticket-date">JUL 16<small>SAT</small></div>
-        <div class="ticket-main"><p>Morning: transfer to ship</p></div>
-        <div class="ticket-note">approx. 4.5 hrs</div>
+        <div class="ticket-date">JUL 15<small>THU</small></div>
+        <div class="ticket-main">
+          <p>Train to Seward · Kenai Fjords National Park boat tour</p>
+          <div class="ticket-hotel"><span class="label">Hotel:</span> <a href="https://www.alaskacollection.com/lodging/seward-windsong-lodge/" target="_blank" rel="noopener">Windsong Lodge ↗</a></div>
+        </div>
+        <div class="ticket-note">Train: 4.5 hrs, arrives 11:30 AM<br>Boat: 5.5 hrs, leaves 12:00 PM</div>
+      </div>
+      <div class="ticket">
+        <div class="ticket-date">JUL 16<small>FRI</small></div>
+        <div class="ticket-main"><p>Board Ship</p></div>
+        <div class="ticket-note"></div>
       </div>
     </div>
 
     <figure class="photo-figure reveal">
-      <img src="images/GarvinsOnTrain.jpg" alt="The Garvin family aboard the Alaska train">
+      <picture>
+        <source srcset="images/GarvinsOnTrain.webp" type="image/webp">
+        <img src="images/GarvinsOnTrain.jpg" alt="The Garvin family aboard the Alaska train" width="1400" height="1050" loading="lazy" decoding="async">
+      </picture>
       <figcaption>The Garvins on the Alaska train in 2012.</figcaption>
     </figure>
   </div>
@@ -679,7 +749,10 @@
 <section class="section section-alt" id="sea">
   <div class="wrap">
     <div class="section-head reveal">
-      <img src="images/CruiseShipWithGlacier.jpg" alt="Cruise ship sailing past a glacier in Alaska">
+      <picture>
+        <source srcset="images/CruiseShipWithGlacier.webp" type="image/webp">
+        <img src="images/CruiseShipWithGlacier.jpg" alt="Cruise ship sailing past a glacier in Alaska" width="800" height="450" loading="lazy" decoding="async">
+      </picture>
       <div>
         <div class="eyebrow">PART TWO</div>
         <h2>Alaska by Sea</h2>
@@ -700,12 +773,21 @@
     </div>
 
     <div class="gallery reveal">
-      <img src="images/CruiseShipTopDeck.jpg" alt="The Sky Bar pool deck aboard Anthem of the Seas at dusk">
-      <img src="images/CruiseShipBumperCars.jpg" alt="Bumper cars in the SeaPlex aboard Anthem of the Seas">
+      <picture>
+        <source srcset="images/CruiseShipTopDeck.webp" type="image/webp">
+        <img src="images/CruiseShipTopDeck.jpg" alt="The Sky Bar pool deck aboard Anthem of the Seas at dusk" width="1400" height="787" loading="lazy" decoding="async">
+      </picture>
+      <picture>
+        <source srcset="images/CruiseShipBumperCars.webp" type="image/webp">
+        <img src="images/CruiseShipBumperCars.jpg" alt="Bumper cars in the SeaPlex aboard Anthem of the Seas" width="1024" height="683" loading="lazy" decoding="async">
+      </picture>
     </div>
 
     <figure class="photo-figure reveal">
-      <img src="images/AdamFlowRider.jpg" alt="Adam on the FlowRider surf simulator">
+      <picture>
+        <source srcset="images/AdamFlowRider.webp" type="image/webp">
+        <img src="images/AdamFlowRider.jpg" alt="Adam on the FlowRider surf simulator" width="1400" height="1051" loading="lazy" decoding="async">
+      </picture>
       <figcaption>Adam on the FlowRider surf simulator in May 2026.</figcaption>
     </figure>
 
@@ -713,44 +795,54 @@
       <div class="manifest-title"><span>Cruise Itinerary</span><span>2027</span></div>
 
       <div class="ticket">
-        <div class="ticket-date">JUL 16<small>SAT</small></div>
+        <div class="ticket-date">JUL 16<small>FRI</small></div>
         <div class="ticket-main"><p>Seward, Alaska</p></div>
         <div class="ticket-note">Departs 8:00 PM</div>
       </div>
       <div class="ticket">
-        <div class="ticket-date">JUL 17<small>SUN</small></div>
+        <div class="ticket-date">JUL 17<small>SAT</small></div>
         <div class="ticket-main"><p>Hubbard Glacier — cruising</p></div>
         <div class="ticket-note">At sea 1:00 – 5:00 PM</div>
       </div>
       <div class="ticket">
-        <div class="ticket-date">JUL 18<small>MON</small></div>
+        <div class="ticket-date">JUL 18<small>SUN</small></div>
         <div class="ticket-main"><p>Juneau, Alaska</p></div>
         <div class="ticket-note">9:00 AM – 8:00 PM</div>
       </div>
       <div class="ticket">
-        <div class="ticket-date">JUL 19<small>TUE</small></div>
+        <div class="ticket-date">JUL 19<small>MON</small></div>
         <div class="ticket-main"><p>Skagway, Alaska</p></div>
         <div class="ticket-note">7:00 AM – 8:00 PM</div>
       </div>
       <div class="ticket">
-        <div class="ticket-date">JUL 20<small>WED</small></div>
+        <div class="ticket-date">JUL 20<small>TUE</small></div>
         <div class="ticket-main"><p>Icy Strait Point, Alaska</p></div>
         <div class="ticket-note">7:00 AM – 4:00 PM</div>
       </div>
       <div class="ticket">
-        <div class="ticket-date">JUL 21<small>THU</small></div>
+        <div class="ticket-date">JUL 21<small>WED</small></div>
         <div class="ticket-main"><p>Ketchikan, Alaska</p></div>
         <div class="ticket-note">9:00 AM – 7:00 PM</div>
       </div>
       <div class="ticket">
-        <div class="ticket-date">JUL 22<small>FRI</small></div>
+        <div class="ticket-date">JUL 22<small>THU</small></div>
         <div class="ticket-main"><p>Cruising — day at sea</p></div>
         <div class="ticket-note"></div>
       </div>
       <div class="ticket">
-        <div class="ticket-date">JUL 23<small>SAT</small></div>
-        <div class="ticket-main"><p>Arrive Vancouver, British Columbia</p></div>
+        <div class="ticket-date">JUL 23<small>FRI</small></div>
+        <div class="ticket-main">
+          <p>Arrive Vancouver, British Columbia</p>
+          <div class="ticket-sub">Option to fly home today or explore Vancouver</div>
+        </div>
         <div class="ticket-note">6:00 AM</div>
+      </div>
+      <div class="ticket">
+        <div class="ticket-date">JUL 24<small>SAT</small></div>
+        <div class="ticket-main">
+          <p>Option to fly home</p>
+        </div>
+        <div class="ticket-note"></div>
       </div>
     </div>
 
@@ -767,7 +859,10 @@
       <a href="tel:9493784568" class="btn btn-ghost">Call (949) 378-4568</a>
     </div>
     <div class="book-photo">
-      <img src="images/ComeJoinUs.JPG" alt="Come Join Us! — a guest waving excitedly from a cruise ship balcony">
+      <picture>
+        <source srcset="images/ComeJoinUs.webp" type="image/webp">
+        <img src="images/ComeJoinUs.JPG" alt="Come Join Us! — a guest waving excitedly from a cruise ship balcony" width="1400" height="933" loading="lazy" decoding="async">
+      </picture>
     </div>
   </div>
 </section>
